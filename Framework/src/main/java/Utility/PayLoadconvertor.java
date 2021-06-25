@@ -10,8 +10,8 @@ public class PayLoadconvertor {
 	public static String generatepayloadString(String filename) throws IOException
 	{
 		//i want is the file name
-		String filepath = "C:\\Users\\AmritaSinghChopra\\workspace\\Framework\\Resource\\" + filename;
-		//String filepath=System.getProperty("uder.dir")+ \\resource\\" + filename"
+		//String filepath = "C:\\Users\\AmritaSinghChopra\\workspace\\Framework\\Resource\\" + filename;
+		String filepath=System.getProperty("user.dir")+"\\Resource\\"+ filename;
 		return new String(Files.readAllBytes(Paths.get(filepath)));
 	}
 	
